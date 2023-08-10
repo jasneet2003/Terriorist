@@ -1,0 +1,298 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  /* Increase the max-width to make the form bigger */
+  width: 80%;
+  /* Set a specific width to center the form on the screen */
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6c63ff;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Customizing the dropdown menu */
+form select {
+  appearance: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  cursor: pointer;
+}
+
+form select option {
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+form select:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+form input[type="checkbox"] {
+  width: auto;
+}
+
+/* Customizing the submit button */
+form .submit-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #6c63ff;
+  background-image: linear-gradient(45deg, #6c63ff, #574ecc);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+form .submit-btn:hover {
+  background-color: #574ecc;
+}
+
+#coursesList {
+  margin-top: 20px;
+}
+
+#coursesList ul {
+  list-style: none;
+}
+
+#coursesList li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+@media screen and (max-width: 821px) {
+  form label {
+    width: 100%;
+  }
+
+  form select,
+  form input[type="checkbox"] {
+    width: calc(100% - 20px);
+  }
+}
+
+#dropdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:   #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.input-group {
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 80px;
+  align-content: center;
+}
+
+.input-group-checkbox p {
+  display: inline-block;
+}
+
+.input-group-checkbox div {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gap{
+margin: 0 0px;
+}
+
+.checkbox-dabba {
+  margin: 0 7px;
+}
+
+.button-div {
+  align-items: center;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+#submitBtn {
+  margin: auto;
+ background-color: aqua;
+ padding: 20px 70px;
+ border-radius: 15px;
+}
+
+
+
+/* Existing CSS styles */
+
+/* Add this media query to adjust styles for smaller screens */
+@media screen and (max-width: 821px) {
+  /* ... (other responsive styles) */
+
+  /* Center-align the dropdowns on mobile screens */
+  #dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    grid-template-columns: 1fr; /* Adjust grid for smaller screens */
+  }
+
+  /* Align checkboxes and labels on the same line */
+  .input-group-checkbox div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+  }
+
+  .checkbox-dabba {
+    margin: 5px 0; /* Adjust checkbox margin for smaller screens */
+  }
+
+  .button-div {
+    padding: 20px 0; /* Adjust padding for smaller screens */
+  }
+
+  #submitBtn {
+    padding: 15px 50px; /* Adjust button padding for smaller screens */
+  }
+
+  /* Adjust font size and line-height for smaller screens */
+  h1,
+  form label,
+  form select,
+  form input[type="checkbox"] {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
+
+
+.input-group select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  width: 100%;
+  padding: 5px;
+}
+
+.input-group select:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+
+#coursesList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(33.33% - 20px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.course-card:hover {
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 821px) {
+
+  /* Display course cards in a single column on mobile screens */
+  #coursesList {
+    display: block;
+  }
+
+  .course-card {
+    width: 100%;
+    margin-bottom: 20px; /* Add some spacing between cards */
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .input-group {
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    align-content: center;
+
+}
+
+  .input-group-checkbox p {
+    display: block;
+  }
+}
+
+
+
