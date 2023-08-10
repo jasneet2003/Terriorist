@@ -85,6 +85,7 @@ form .submit-btn {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 4px;
+  display: block;
 }
 
 form .submit-btn:hover {
@@ -104,22 +105,11 @@ form .submit-btn:hover {
   color: #555;
 }
 
-@media screen and (max-width: 821px) {
-  form label {
-    width: 100%;
-  }
-
-  form select,
-  form input[type="checkbox"] {
-    width: calc(100% - 20px);
-  }
-}
-
 #dropdown-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:   #f2f2f2;
+  background-color: #f2f2f2;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -143,15 +133,15 @@ form .submit-btn:hover {
 }
 
 .input-group-checkbox div {
-    float: right;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.gap{
-margin: 0 0px;
+.gap {
+  margin: 0 0px;
 }
 
 .checkbox-dabba {
@@ -167,58 +157,13 @@ margin: 0 0px;
 
 #submitBtn {
   margin: auto;
- background-color: aqua;
- padding: 20px 70px;
- border-radius: 15px;
+  background-color: aqua;
+  padding: 20px 70px;
+  border-radius: 15px;
 }
 
 
 
-/* Existing CSS styles */
-
-/* Add this media query to adjust styles for smaller screens */
-@media screen and (max-width: 821px) {
-  /* ... (other responsive styles) */
-
-  /* Center-align the dropdowns on mobile screens */
-  #dropdown-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    grid-template-columns: 1fr; /* Adjust grid for smaller screens */
-  }
-
-  /* Align checkboxes and labels on the same line */
-  .input-group-checkbox div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: first baseline;
-  }
-
-  .checkbox-dabba {
-    margin: 5px 0; /* Adjust checkbox margin for smaller screens */
-  }
-
-  .button-div {
-    padding: 20px 0; /* Adjust padding for smaller screens */
-  }
-
-  #submitBtn {
-    padding: 15px 50px; /* Adjust button padding for smaller screens */
-  }
-
-  /* Adjust font size and line-height for smaller screens */
-  h1,
-  form label,
-  form select,
-  form input[type="checkbox"] {
-    font-size: 24px;
-    line-height: 1.4;
-  }
-}
 
 
 .input-group select {
@@ -274,7 +219,8 @@ margin: 0 0px;
 
   .course-card {
     width: 100%;
-    margin-bottom: 20px; /* Add some spacing between cards */
+    margin-bottom: 20px;
+    /* Add some spacing between cards */
   }
 }
 
@@ -287,12 +233,71 @@ margin: 0 0px;
     margin: 20px;
     align-content: center;
 
-}
+  }
 
   .input-group-checkbox p {
     display: block;
   }
 }
 
+@media screen and (max-width: 821px) {
+  form label {
+    width: 100%;
+  }
 
+  form select,
+  form input[type="checkbox"] {
+    width: calc(100% - 20px);
+  }
+}
 
+/* Existing CSS styles */
+
+/* Add this media query to adjust styles for smaller screens */
+@media screen and (max-width: 821px) {
+  /* ... (other responsive styles) */
+
+  /* Center-align the dropdowns on mobile screens */
+  #dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    /* Adjust grid for smaller screens */
+  }
+
+  /* Align checkboxes and labels on the same line */
+  .input-group-checkbox div {
+    display: block;
+    float: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+  }
+
+  .checkbox-dabba {
+    margin: 5px 0;
+    /* Adjust checkbox margin for smaller screens */
+  }
+
+  .button-div {
+    padding: 20px 0;
+    /* Adjust padding for smaller screens */
+  }
+
+  #submitBtn {
+    padding: 15px 50px;
+    /* Adjust button padding for smaller screens */
+  }
+
+  /* Adjust font size and line-height for smaller screens */
+  h1,
+  form label,
+  form select,
+  form input[type="checkbox"] {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
