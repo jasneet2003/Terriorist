@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .container {
@@ -231,9 +230,7 @@ form .submit-btn:hover {
     border-radius: 5px;
     padding: 10px;
     margin: 20px;
-    align-content: center;
-
-  }
+  align-items: center;  }
 
   .input-group-checkbox p {
     display: block;
@@ -263,8 +260,9 @@ form .submit-btn:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 10px;
     grid-template-columns: 1fr;
+    margin-bottom: 20px;
     /* Adjust grid for smaller screens */
   }
 
